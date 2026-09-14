@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Фреймворки — Справочник веб-разработчика</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Шапка и навигация -->
+    <header class="bg-dark text-white sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                &lt;JS_Hub/&gt;
+            </a>
+            <!-- Бургер-кнопка для мобильных устройств -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Основное меню -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="react.html">React</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vue.html">Vue.js</a></li>
+                    <li class="nav-item"><a class="nav-link" href="angular.html">Angular</a></li>
+                    <li class="nav-item"><a class="nav-link" href="svelte.html">Svelte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="comparison.html">Сравнение</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tools.html">Инструменты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="video.html">Видео</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Основной контент и Сайдбар -->
+    <div class="container my-5 flex-grow-1">
+        <div class="row">
+            <!-- Главный контент (<main>) -->
+            <main class="col-lg-8 mb-4">
+                <section class="mb-4">
+                    <h1 class="display-5 fw-bold mb-3">Современные JavaScript-фреймворки</h1>
+                    <p class="lead text-muted">
+                        Добро пожаловать в интерактивный справочник по экосистеме фронтенд-разработки. 
+                        Здесь собрана ключевая информация о самых популярных фреймворках и библиотеках.
+                    </p>
+                    <hr class="my-4">
+                </section>
+
+                <section class="mb-4">
+                    <h2>Что такое JS-фреймворки?</h2>
+                    <p>
+                        <strong>JavaScript-фреймворки и библиотеки</strong> — это готовые наборы инструментов, шаблонов и библиотек кода, 
+                        которые значительно упрощают и ускоряют процесс создания динамических пользовательских интерфейсов (UI) и одностраничных веб-приложений (SPA).
+                    </p>
+                    <p>
+                        В современной веб-разработке они решают задачи управления состоянием приложения, эффективного обновления DOM-дерева, 
+                        маршрутизации и повторного использования компонентов.
+                    </p>
+                </section>
+
+                <section class="mb-4">
+                    <h2>Основные участники рынка («Большая четвёрка»)</h2>
+                    <div class="row row-cols-1 row-cols-md-2 g-4 mt-2">
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title text-primary">React</h3>
+                                    <p class="card-text fs-6">Библиотека от Meta для создания компонентных интерфейсов с использованием Virtual DOM.</p>
+                                    <a href="react.html" class="btn btn-outline-primary btn-sm">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title text-success">Vue.js</h3>
+                                    <p class="card-text fs-6">Прогрессивный фреймворк с мягкой кривой обучения и понятным синтаксисом.</p>
+                                    <a href="vue.html" class="btn btn-outline-success btn-sm">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title text-danger">Angular</h3>
+                                    <p class="card-text fs-6">Полнофункциональный фреймворк от Google для крупных корпоративных систем.</p>
+                                    <a href="angular.html" class="btn btn-outline-danger btn-sm">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title text-warning">Svelte</h3>
+                                    <p class="card-text fs-6">Инновационный компилятор, сдвигающий работу по обновлению DOM на этап сборки.</p>
+                                    <a href="svelte.html" class="btn btn-outline-warning btn-sm">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Сайдбар (<aside>) -->
+            <aside class="col-lg-4">
+                <div class="card mb-4 shadow-sm border-0">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h5 mb-0">Официальная документация</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="https://react.dev" target="_blank" rel="noopener noreferrer" class="text-decoration-none">⚛️ React Docs</a></li>
+                            <li class="mb-2"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer" class="text-decoration-none">🟢 Vue.js Docs</a></li>
+                            <li class="mb-2"><a href="https://angular.dev" target="_blank" rel="noopener noreferrer" class="text-decoration-none">🅰️ Angular Docs</a></li>
+                            <li class="mb-2"><a href="https://svelte.dev" target="_blank" rel="noopener noreferrer" class="text-decoration-none">🟠 Svelte Docs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm border-0 bg-light">
+                    <div class="card-body">
+                        <h3 class="h5 card-title">💡 Быстрый совет</h3>
+                        <p class="card-text small text-muted">
+                            Если вы только начинаете путь во фронтенде, обратите внимание на <strong>Vue.js</strong> или <strong>React</strong> — по ним доступно больше всего обучающих материалов.
+                        </p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Подвал (<footer>) -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2026 JS_Hub — Учебный проект по фронтенд-разработке.</p>
+            <p class="small text-muted mb-0">Разработано с использованием HTML5, CSS3 и Bootstrap 5.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (включает Popper для выпадающих меню и бургера) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

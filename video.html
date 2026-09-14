@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео — JS-Фреймворки</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <header class="bg-dark text-white sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">&lt;JS_Hub/&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="react.html">React</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vue.html">Vue.js</a></li>
+                    <li class="nav-item"><a class="nav-link" href="angular.html">Angular</a></li>
+                    <li class="nav-item"><a class="nav-link" href="svelte.html">Svelte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="comparison.html">Сравнение</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tools.html">Инструменты</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="video.html">Видео</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-5 flex-grow-1">
+        <div class="row">
+            <main class="col-lg-8 mb-4">
+                <h1 class="display-5 fw-bold mb-3">Обучающие видеоматериалы</h1>
+                <p class="lead text-muted">Подборка видеообзоров и вводных лекций по современному веб-девелопменту.</p>
+                <hr class="my-4">
+
+                <!—Адаптивный плеер HTML5 (работает всегда) à
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="ratio ratio-16x9 rounded-top overflow-hidden bg-black">
+                        <iframe width="720" height="405" src="https://rutube.ru/play/embed/b41e3f2b7a56381e678fd57736d43c29/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Обзор экосистемы веб-разработки</h2>
+                        <p class="card-text text-muted">Вводный видеокурс по архитектуре современнного JavaScript и выбору инструментария.</p>
+                    </div>
+                </div>
+            </main>
+
+            <aside class="col-lg-4">
+                <div class="card mb-4 shadow-sm border-0 bg-light">
+                    <div class="card-body">
+                        <h3 class="h5 card-title"> Источники</h3>
+                        <p class="card-text small text-muted">
+                            Для локального воспроизведения можно также скопировать любой `.mp4` файл в папку `video/` вашего проекта и указать к нему относительный путь.
+                        </p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-auto text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 JS_Hub — Учебный проект.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

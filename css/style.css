@@ -1,0 +1,19 @@
+
+Body {
+    Background-color: #f8f9fa; 
+}
+
+
+.card {
+    Transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    Transform: translateY(-5px);
+}
+
+
+.nav-link:hover {
+    Color: #ffc107 !important;
+}
+

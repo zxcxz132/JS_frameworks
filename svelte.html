@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svelte — JS-Фреймворки</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <header class="bg-dark text-white sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">&lt;JS_Hub/&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="react.html">React</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vue.html">Vue.js</a></li>
+                    <li class="nav-item"><a class="nav-link" href="angular.html">Angular</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="svelte.html">Svelte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="comparison.html">Сравнение</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tools.html">Инструменты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="video.html">Видео</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-5 flex-grow-1">
+        <div class="row">
+            <main class="col-lg-8 mb-4">
+                <h1 class="display-5 fw-bold text-warning mb-3">Svelte</h1>
+                <p class="lead text-muted">Инновационный инструмент, переносящий работу по сборке интерфейса с браузера на этап компиляции приложения.</p>
+                <hr class="my-4">
+
+                <section class="mb-4">
+                    <h2>Чем Svelte отличается от остальных?</h2>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item"><strong>Без Virtual DOM:</strong> Svelte компилирует код в чистый, высокооптимизированный JavaScript, который обновляет DOM напрямую.</li>
+                        <li class="list-group-item"><strong>Меньше кода:</strong> Синтаксис позволяет описывать сложную логику минимальным количеством строк.</li>
+                        <li class="list-group-item"><strong>Истинная реактивность:</strong> Использование стандартного синтаксиса JavaScript (например, присваивания) для автоматического обновления состояния.</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>Преимущества</h2>
+                    <div class="p-3 border rounded bg-light">
+                        <p class="mb-2"> **Высокая производительность:** Отсутствие накладных расходов на вычисление разницы в Virtual DOM.</p>
+                        <p class="mb-0"> **Минимальный размер бандла:** В готовый проект не нужно упаковывать сам код фреймворка.</p>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="col-lg-4">
+                <div class="card mb-4 shadow-sm border-0">
+                    <div class="card-header bg-warning text-dark">
+                        <h2 class="h5 mb-0">Факты о Svelte</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-2"><strong>Год релиза:</strong> 2016</p>
+                        <p class="mb-2"><strong>Создатель:</strong> Рич Харрис (Rich Harris)</p>
+                        <p class="mb-2"><strong>Подход:</strong> Компилятор</p>
+                        <p class="mb-0"><strong>Лицензия:</strong> MIT</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-auto text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 JS_Hub — Учебный проект.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
